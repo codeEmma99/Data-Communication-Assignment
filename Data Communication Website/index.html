@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A unique one-page data communication assignment covering signals, protocols, network models, transmission media, telegraph history, resources, and inspiration.">
+  <title>Signal Journey | Data Communication Assignment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Data Communication home">
+        <span class="brand-mark">DC</span>
+        <span>Data Communication</span>
+      </a>
+      <button class="theme-toggle" type="button" aria-label="Toggle theme">Dark</button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#concepts">Concepts</a>
+        <a href="#models">Models</a>
+        <a href="#telegraph">Telegraph</a>
+        <a href="#video">Video</a>
+        <a href="#resources">Resources</a>
+      </div>
+    </nav>
+  </header>
+  <div id="progressBar"></div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Data Communication Assignment</p>
+        <h1>My Signal Journey Notebook</h1>
+        <p class="hero-text">
+          A unique guide to how messages become signals, move through media, follow
+          protocols, and arrive as useful information on another device.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#concepts">Start Reading</a>
+          <a class="button secondary" href="assignment.html">Open Assignment</a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="Animated communication system overview">
+        <div class="signal-card sender">
+          <strong>Sender</strong>
+          <span>Laptop</span>
+        </div>
+        <div class="signal-path">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="signal-card receiver">
+          <strong>Receiver</strong>
+          <span>Server</span>
+        </div>
+        <div class="mini-metric stat">
+          <strong data-target="5">0</strong>
+          <span>Core Components</span>
+        </div>
+        <div class="mini-metric stat">
+          <strong data-target="7">0</strong>
+          <span>OSI Layers</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section reveal" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">Profile</p>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="portrait-card">
+          <img class="passport-photo" src="assets/profile-passport.jpg" alt="Student passport photo">
+          <div>
+            <h3>Your Name</h3>
+            <p>Student ID: Your ID</p>
+          </div>
+        </div>
+        <div class="bio-card">
+          <h3>Short Bio</h3>
+          <p>
+            I am a student learning web development and computer networking. This notebook
+            summarizes what I have studied in data communication, including how messages
+            become signals, how networks are organized, and why protocols make reliable
+            communication possible.
+          </p>
+        </div>
+        <div class="inspiration-card">
+          <h3>What Inspires Me</h3>
+          <p>
+            I am inspired by how simple ideas like bits, signals, and addresses can
+            connect people, businesses, schools, hospitals, and entire communities.
+            Data communication shows that technology is most powerful when it helps
+            people share knowledge faster and more reliably.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="concepts">
+      <div class="section-heading">
+        <p class="eyebrow">Section 1</p>
+        <h2>Core Data Communication Concepts</h2>
+      </div>
+      <div class="cards five-components">
+        <article>
+          <span>01</span>
+          <h3>Sender</h3>
+          <p>The device that creates and sends data, such as a phone, laptop, or server.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Message</h3>
+          <p>The information being shared, including text, images, sound, video, or files.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Medium</h3>
+          <p>The path data travels through, such as copper cable, fibre optic cable, or radio waves.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Receiver</h3>
+          <p>The device that accepts the data and converts it into useful information.</p>
+        </article>
+        <article>
+          <span>05</span>
+          <h3>Protocol</h3>
+          <p>The rules that control format, timing, delivery, and error handling.</p>
+        </article>
+      </div>
+      <div class="accordion" aria-label="Signal journey accordion">
+        <div class="accordion-item">
+          <button class="accordion-btn" type="button">Encoding</button>
+          <div class="accordion-body">
+            <p>The sender changes a message into a signal. Text, images, audio, and video are represented as bits before transmission.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" type="button">Transmission</button>
+          <div class="accordion-body">
+            <p>The signal travels through copper wire, fibre optic cable, or wireless channels. Noise, distance, and interference can affect quality.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" type="button">Decoding</button>
+          <div class="accordion-body">
+            <p>The receiver changes the signal back into usable data and checks for errors before the application displays it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section reveal" id="models">
+      <div>
+        <p class="eyebrow">Section 2</p>
+        <h2>Network Models</h2>
+        <p>
+          Network models organize communication into layers. Each layer has a specific
+          responsibility, making it easier to design, troubleshoot, and understand networks.
+        </p>
+      </div>
+      <div class="model-list" aria-label="OSI model layers">
+        <div><strong>7</strong><span>Application</span></div>
+        <div><strong>6</strong><span>Presentation</span></div>
+        <div><strong>5</strong><span>Session</span></div>
+        <div><strong>4</strong><span>Transport</span></div>
+        <div><strong>3</strong><span>Network</span></div>
+        <div><strong>2</strong><span>Data Link</span></div>
+        <div><strong>1</strong><span>Physical</span></div>
+      </div>
+    </section>
+
+    <section class="section media-section reveal" id="media">
+      <div class="section-heading">
+        <p class="eyebrow">Section 3</p>
+        <h2>Transmission Media and Signals</h2>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Examples</th>
+              <th>Strength</th>
+              <th>Common Use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Twisted Pair</td>
+              <td>Cat5e, Cat6</td>
+              <td>Affordable and common</td>
+              <td>School, home, and office LANs</td>
+            </tr>
+            <tr>
+              <td>Fibre Optic</td>
+              <td>Single-mode, multi-mode</td>
+              <td>Very high speed over long distance</td>
+              <td>Internet backbone and data centres</td>
+            </tr>
+            <tr>
+              <td>Wireless</td>
+              <td>Wi-Fi, Bluetooth, 4G, 5G</td>
+              <td>Mobility and flexible coverage</td>
+              <td>Phones, laptops, IoT, mobile networks</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section telegraph-section reveal" id="telegraph">
+      <div class="section-heading">
+        <p class="eyebrow">Section 4</p>
+        <h2>Telegraph Diagram</h2>
+      </div>
+      <div class="telegraph-grid">
+        <figure class="telegraph-diagram">
+          <img src="assets/telegraph-diagram.svg" alt="Diagram of a telegraph system">
+          <figcaption>A telegraph sends coded electrical pulses through a wire from one station to another.</figcaption>
+        </figure>
+        <div class="telegraph-copy">
+          <h3>Why the telegraph matters</h3>
+          <p>
+            The telegraph was one of the first practical long-distance data communication
+            systems. A sender pressed a key to create electrical pulses, the pulses
+            travelled along a wire, and a receiver converted them into Morse code.
+          </p>
+          <ul>
+            <li>Short pulse: dot</li>
+            <li>Long pulse: dash</li>
+            <li>Shared code: Morse code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section video-section reveal" id="video">
+      <div class="section-heading">
+        <p class="eyebrow">Section 5</p>
+        <h2>Learning Video</h2>
+      </div>
+      <div class="video-layout">
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/BDLlWQuqOU8?rel=0&modestbranding=1&playsinline=1"
+            title="Data Communication and Networking video"
+            referrerpolicy="strict-origin-when-cross-origin"
+            sandbox="allow-scripts allow-same-origin allow-presentation"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div>
+          <h3>Video Resource</h3>
+          <p>
+            This video plays directly inside the page tab and helps reinforce the
+            basic ideas behind data communication and networking.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section inspiration-section reveal" id="inspiration">
+      <div class="section-heading">
+        <p class="eyebrow">Reflection</p>
+        <h2>What Inspires Me</h2>
+      </div>
+      <div class="inspiration-layout">
+        <div>
+          <h3>Why this topic matters to me</h3>
+          <p>
+            I am inspired by the way data communication turns invisible signals into
+            real human connection. A message can leave one device as electrical pulses,
+            light, or radio waves and become a lesson, a video call, a bank transaction,
+            or emergency information somewhere else.
+          </p>
+        </div>
+        <ol class="signal-steps">
+          <li><strong>Learn the rules</strong><span>Protocols make communication predictable.</span></li>
+          <li><strong>Respect the medium</strong><span>Each channel has strengths, limits, and noise.</span></li>
+          <li><strong>Build useful systems</strong><span>Good networks help people share knowledge.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section resources-section reveal" id="resources">
+      <div class="section-heading">
+        <p class="eyebrow">Resources</p>
+        <h2>Helpful Links</h2>
+      </div>
+      <div class="resource-grid">
+        <a href="assignment.html">
+          <strong>Assignment Page</strong>
+          <span>Open the assignment page in a new tab.</span>
+        </a>
+        <a href="resources/assignment-turnitin.txt" target="_blank" rel="noopener">
+          <strong>Assignment Brief</strong>
+          <span>Open the local assignment copy in a new tab.</span>
+        </a>
+        <a href="https://www.netacad.com/" target="_blank" rel="noopener">
+          <strong>Cisco Networking Academy</strong>
+          <span>Networking courses and practice resources.</span>
+        </a>
+        <a href="https://www.wireshark.org/" target="_blank" rel="noopener">
+          <strong>Wireshark</strong>
+          <span>Tool for viewing real network traffic.</span>
+        </a>
+        <a href="https://www.ietf.org/rfc/" target="_blank" rel="noopener">
+          <strong>IETF RFC Library</strong>
+          <span>Official internet standards and protocol documents.</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built for the Data Communication assignment.</p>
+    <p>Created by <strong>Your Name</strong></p>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">Top</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

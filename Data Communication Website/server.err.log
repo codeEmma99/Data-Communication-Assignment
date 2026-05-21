@@ -1,0 +1,10 @@
+::1 - - [20/May/2026 06:13:15] "GET /assignment.html HTTP/1.1" 200 -
+::1 - - [20/May/2026 06:13:40] "GET /assignment.html HTTP/1.1" 200 -
+::1 - - [20/May/2026 06:13:40] "GET /styles.css HTTP/1.1" 200 -
+::1 - - [20/May/2026 06:13:41] "GET /assets/telegraph-diagram.svg HTTP/1.1" 200 -
+::1 - - [20/May/2026 06:14:22] "GET /assignment-document.html HTTP/1.1" 200 -
+::1 - - [20/May/2026 06:17:52] "GET /index.html HTTP/1.1" 200 -
+::1 - - [20/May/2026 06:18:04] "GET /index.html HTTP/1.1" 200 -
+::1 - - [20/May/2026 06:18:04] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [20/May/2026 06:18:04] "GET /assets/profile-passport.jpg HTTP/1.1" 200 -
+::1 - - [20/May/2026 06:18:04] "GET /script.js HTTP/1.1" 200 -

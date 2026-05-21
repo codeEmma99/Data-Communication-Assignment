@@ -1,0 +1,16 @@
+Create a nice web page to summarize everything you have studied in data communication
+
+It should include your name, Id, Short bio with image, at least 3 menus, at least 3 links, 5 sections, and provide a section for what inspires you .
+Include a diagram of a telegraph
+
+You should have a link to you assignment. This link should open in a next tab
+One link should have a link to a Youtube video which will play inside the tab.
+Push the work to your GitHub account. Your work will be viewed through GitHub.
+The tabs in the nav bar should link to sections in the same tab (Link1)
+Include resources which should have a copy of your assignment-Turnitin (Link2)
+Commit to GitHub
+Copy GitHub link (link to repo)
+Name it Data Communication assignment
+Sign up for web development in one million coders
+
+Deadline: 22nd May, 2026 6:00 am
